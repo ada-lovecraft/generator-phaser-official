@@ -23,5 +23,5 @@
       }
     }
   };
-  GameOverState = GameOver;
+  GameoverState = GameOver;
 }());

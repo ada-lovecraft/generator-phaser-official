@@ -9,7 +9,9 @@
     "grunt-open": "~0.2.0",
     "matchdep": "~0.1.2",
     "connect-livereload": "~0.1.3",
-    "moment": "~2.0.0"
+    "moment": "~2.0.0",
+    "grunt-html-build": "~0.3.2",
+    "lodash": "*"
   },
   "engines": {
     "node": ">=0.8.0"

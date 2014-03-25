@@ -1,7 +1,9 @@
 // Generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> <%= pkg.version %>
 'use strict';
 var moment = require('moment');
- 
+var config = require('./config.json');
+var _ = require('lodash');
+
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
@@ -23,7 +25,8 @@ module.exports = function (grunt) {
           'index.html',
           'game/**/*.js'
         ],
-      }
+      },
+      tasks: ['build']
     },
     connect: {
       options: {
@@ -46,9 +49,41 @@ module.exports = function (grunt) {
       server: {
         path: 'http://localhost:<%%= connect.options.port %>'
       }
+    },
+    htmlbuild: {
+      dist: {
+        src: '_index.tpl',
+        dest: 'index.html',
+        options: {
+          scripts: {
+            phaser: 'bower_components/phaser-official/build/phaser.js',
+            gameStates: 'game/states/*.js',
+            gamePrefabs: 'game/prefabs/*.js',
+            gameBootstrapper: 'game/main.js'
+          }
+        }
+      }
     }
   });
- 
-  grunt.registerTask('server', ['connect:livereload', 'open', 'watch']);
-  grunt.registerTask('default', ['server']);
+  
+  grunt.registerTask('build', ['htmlbuild', 'buildBootstrapper']);
+  grunt.registerTask('serve', ['build', 'connect:livereload', 'open', 'watch']);
+  grunt.registerTask('default', ['serve']);
+
+  grunt.registerTask('buildBootstrapper', 'builds the bootstrapper file correctly', function() {
+    var stateFiles = grunt.file.expand('game/states/*.js');
+    var gameStates = [];
+    var statePattern = new RegExp(/(\w+).js$/);
+    stateFiles.forEach(function(file) {
+      var state = file.match(statePattern)[1];
+      if (!!state) {
+        gameStates.push({shortName: state, stateName: state + 'State'});
+      }
+    });
+    config.gameStates = gameStates;
+    console.log(config);
+    var bootstrapper = grunt.file.read('templates/_main.js.tpl');
+    bootstrapper = grunt.template.process(bootstrapper,{data: config});
+    grunt.file.write('game/main.js', bootstrapper);
+  });
 };

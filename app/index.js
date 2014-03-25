@@ -57,17 +57,20 @@ var PhaserGenerator = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
+  
+  
   app: function () {
     // base files
     this.template('Gruntfile.js','Gruntfile.js');
-    this.template('_index.html', 'index.html');
+    
     this.template('css/_styles.css', 'css/styles.css');
     this.template('_bower.json', 'bower.json');
     this.template('_config.json','config.json');
     this.template('_package.json','package.json');
+    this.template('templates/_index.html.tpl');
+
 
     // game files
-    this.template('game/_main.js','game/main.js');
     this.template('game/states/_boot.js','game/states/boot.js');
     this.copy('game/states/preload.js');
     this.copy('game/states/menu.js');
@@ -75,11 +78,27 @@ var PhaserGenerator = yeoman.generators.Base.extend({
     this.copy('game/states/gameover.js');
     this.copy('assets/preloader.gif');
     this.copy('assets/yeoman-logo.png');
+    this.copy('templates/_main.js.tpl');
     
+  },
+  createIndex: function() {
+    var stateFiles = this.expand('game/states/*.js');
+    this.gameStates = [];
+    var statePattern = new RegExp(/(\w+).js$/);
+    stateFiles.forEach(function(file) {
+      var state = file.match(statePattern)[1];
+      if (!!state) {
+        this.gameStates.push({shortName: state, stateName: this._.capitalize(state) + 'State'});
+      }
+    }, this);
+
+    this.template('game/_main.js','game/main.js');
   },
   runtime: function() {
     this.copy('bowerrc', '.bowerrc');
     this.copy('gitignore', '.gitignore');
+    
+
   },
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');

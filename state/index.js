@@ -10,6 +10,7 @@ var StateGenerator = yeoman.generators.NamedBase.extend({
 
   files: function () {
     this.template('_state.js', 'game/states/' + this.name + '.js');
+    
   }
 });
 

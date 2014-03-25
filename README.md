@@ -26,13 +26,13 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 To install generator-phaser from npm, run:
 
 ```
-$ npm install -g generator-phaser
+$ npm install -g generator-phaser-official
 ```
 
 Finally, initiate the generator:
 
 ```
-$ yo phaser
+$ yo phaser-official
 ```
 
 ### Getting To Know Yeoman

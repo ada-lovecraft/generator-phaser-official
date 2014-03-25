@@ -9,14 +9,20 @@
 </head>
 <body>
   <div id="<%= _.slugify(projectName) %>"></div>
-  <!-- game loader-->
-  <script src="game/main.js"></script>  
-  <!-- game states -->
-  <script src="game/states/boot.js"></script>
-  <script src="game/states/preload.js"></script>
-  <script src="game/states/menu.js"></script>
-  <script src="game/states/play.js"></script>
-  <script src="game/states/gameover.js"></script>
-  <script src="bower_components/phaser-official/build/phaser.js"></script>
+
+  <!-- build:script phaser -->
+  <!-- /build -->
+
+  <!-- build:script gameBootstrapper -->
+  <!-- /build -->
+
+  <!-- build:script gameStates -->
+  <!-- /build -->
+
+  <!-- build:script gamePrefabs -->
+  <!-- /build -->
+
+
+
 </body>
 </html>
