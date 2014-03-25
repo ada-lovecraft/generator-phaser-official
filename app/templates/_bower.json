@@ -1,0 +1,7 @@
+{
+  "name": "<%= _.slugify(projectName) %>",
+  "version": "0.0.0",
+  "dependencies": {
+    "phaser-official": "<%= phaserVersion %>"
+  }
+}

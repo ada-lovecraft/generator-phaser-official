@@ -1,0 +1,5 @@
+{
+  "name": "<%= projectName %>",
+  "width": "<%= gameWidth %>",
+  "height": "<%= gameHeight %>"
+}
