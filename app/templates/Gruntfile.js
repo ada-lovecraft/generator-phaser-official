@@ -2,7 +2,11 @@
 'use strict';
 var moment = require('moment');
 var config = require('./config.json');
-var _ = require('lodash');
+var _ = require('underscore');
+_.str = require('underscore.string');
+
+// Mix in non-conflict functions to Underscore namespace if you want
+_.mixin(_.str.exports());
 
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
@@ -16,17 +20,17 @@ module.exports = function (grunt) {
  
   grunt.initConfig({
     watch: {
-      options: {
-        nospawn: true,
-        livereload: LIVERELOAD_PORT
-      },
-      livereload: {
+      scripts: {
         files: [
-          'index.html',
-          'game/**/*.js'
+            'game/**/*.js',
+            '!game/main.js'
         ],
-      },
-      tasks: ['build']
+        options: {
+          spawn: false,
+          livereload: LIVERELOAD_PORT
+        },
+        tasks: ['build']
+      }
     },
     connect: {
       options: {
@@ -77,7 +81,7 @@ module.exports = function (grunt) {
     stateFiles.forEach(function(file) {
       var state = file.match(statePattern)[1];
       if (!!state) {
-        gameStates.push({shortName: state, stateName: state + 'State'});
+        gameStates.push({shortName: state, stateName: _.capitalize(state) + 'State'});
       }
     });
     config.gameStates = gameStates;
@@ -85,5 +89,6 @@ module.exports = function (grunt) {
     var bootstrapper = grunt.file.read('templates/_main.js.tpl');
     bootstrapper = grunt.template.process(bootstrapper,{data: config});
     grunt.file.write('game/main.js', bootstrapper);
+  });
   });
 };
