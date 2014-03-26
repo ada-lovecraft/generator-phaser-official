@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.24/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/jdowell/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+12 verbose folder .
+13 info prepublish generator-phaser-official@0.0.2
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/jdowell/.npm/1f1177db-tar.lock
+16 silly lockFile 03cd3c48-5420-0-14166413620114326-tmp-tgz tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+17 verbose lock tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz /Users/jdowell/.npm/03cd3c48-5420-0-14166413620114326-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 03cd3c48-5420-0-14166413620114326-tmp-tgz tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+21 silly lockFile 03cd3c48-5420-0-14166413620114326-tmp-tgz tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+22 verbose tar unpack /var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+23 silly lockFile 25603d75-5420-0-14166413620114326-package tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package
+24 verbose lock tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package /Users/jdowell/.npm/25603d75-5420-0-14166413620114326-package.lock
+25 silly lockFile 03cd3c48-5420-0-14166413620114326-tmp-tgz tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+26 verbose lock tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz /Users/jdowell/.npm/03cd3c48-5420-0-14166413620114326-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry README.md
+30 silly gunzTarPerm extractEntry app/index.js
+31 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+32 silly gunzTarPerm extractEntry app/templates/templates/_index.html.tpl
+33 silly gunzTarPerm extractEntry app/templates/templates/_main.js.tpl
+34 silly gunzTarPerm extractEntry app/templates/_config.json
+35 silly gunzTarPerm extractEntry app/templates/_package.json
+36 silly gunzTarPerm extractEntry app/templates/assets/preloader.gif
+37 silly gunzTarPerm extractEntry app/templates/assets/yeoman-logo.png
+38 silly gunzTarPerm extractEntry app/templates/bowerrc
+39 silly gunzTarPerm extractEntry app/templates/_bower.json
+40 silly gunzTarPerm extractEntry app/templates/editorconfig
+41 silly gunzTarPerm extractEntry app/templates/game/_main.js
+42 silly gunzTarPerm extractEntry app/templates/game/states/_boot.js
+43 silly gunzTarPerm extractEntry app/templates/game/states/gameover.js
+44 silly gunzTarPerm extractEntry app/templates/game/states/menu.js
+45 silly gunzTarPerm extractEntry app/templates/game/states/play.js
+46 silly gunzTarPerm extractEntry app/templates/game/states/preload.js
+47 silly gunzTarPerm extractEntry app/templates/gitignore
+48 silly gunzTarPerm extractEntry app/templates/jshintrc
+49 silly gunzTarPerm extractEntry app/templates/css/_styles.css
+50 silly lockFile 25603d75-5420-0-14166413620114326-package tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package
+51 silly lockFile 25603d75-5420-0-14166413620114326-package tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package
+52 silly lockFile 03cd3c48-5420-0-14166413620114326-tmp-tgz tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+53 silly lockFile 03cd3c48-5420-0-14166413620114326-tmp-tgz tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/tmp.tgz
+54 verbose tar pack [ '/Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz',
+54 verbose tar pack   '/var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package' ]
+55 verbose tarball /Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+56 verbose folder /var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package
+57 silly lockFile 25603d75-5420-0-14166413620114326-package tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package
+58 verbose lock tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package /Users/jdowell/.npm/25603d75-5420-0-14166413620114326-package.lock
+59 silly lockFile c628b5e1-haser-official-0-0-2-package-tgz tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+60 verbose lock tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz /Users/jdowell/.npm/c628b5e1-haser-official-0-0-2-package-tgz.lock
+61 silly lockFile 25603d75-5420-0-14166413620114326-package tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package
+62 silly lockFile 25603d75-5420-0-14166413620114326-package tar:///var/folders/hx/j9nsvh1d28709kjwpmllt7mm0000gn/T/npm-79780-kOyo1fY5/1395794935420-0.14166413620114326/package
+63 silly lockFile c628b5e1-haser-official-0-0-2-package-tgz tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+64 silly lockFile c628b5e1-haser-official-0-0-2-package-tgz tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+65 silly lockFile 2a8b774e-or-phaser-official-0-0-2-package /Users/jdowell/.npm/generator-phaser-official/0.0.2/package
+66 verbose lock /Users/jdowell/.npm/generator-phaser-official/0.0.2/package /Users/jdowell/.npm/2a8b774e-or-phaser-official-0-0-2-package.lock
+67 silly lockFile 2a8b774e-or-phaser-official-0-0-2-package /Users/jdowell/.npm/generator-phaser-official/0.0.2/package
+68 silly lockFile 2a8b774e-or-phaser-official-0-0-2-package /Users/jdowell/.npm/generator-phaser-official/0.0.2/package
+69 verbose tar unpack /Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+70 silly lockFile 70badef7-or-phaser-official-0-0-2-package tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package
+71 verbose lock tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package /Users/jdowell/.npm/70badef7-or-phaser-official-0-0-2-package.lock
+72 silly lockFile c628b5e1-haser-official-0-0-2-package-tgz tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+73 verbose lock tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz /Users/jdowell/.npm/c628b5e1-haser-official-0-0-2-package-tgz.lock
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry README.md
+77 silly gunzTarPerm extractEntry app/index.js
+78 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+79 silly gunzTarPerm extractEntry app/templates/templates/_index.html.tpl
+80 silly gunzTarPerm extractEntry app/templates/templates/_main.js.tpl
+81 silly gunzTarPerm extractEntry app/templates/_config.json
+82 silly gunzTarPerm extractEntry app/templates/_package.json
+83 silly gunzTarPerm extractEntry app/templates/assets/preloader.gif
+84 silly gunzTarPerm extractEntry app/templates/assets/yeoman-logo.png
+85 silly gunzTarPerm extractEntry app/templates/bowerrc
+86 silly gunzTarPerm extractEntry app/templates/_bower.json
+87 silly gunzTarPerm extractEntry app/templates/editorconfig
+88 silly gunzTarPerm extractEntry app/templates/game/_main.js
+89 silly gunzTarPerm extractEntry app/templates/game/states/_boot.js
+90 silly gunzTarPerm extractEntry app/templates/game/states/gameover.js
+91 silly gunzTarPerm extractEntry app/templates/game/states/menu.js
+92 silly gunzTarPerm extractEntry app/templates/game/states/play.js
+93 silly gunzTarPerm extractEntry app/templates/game/states/preload.js
+94 silly gunzTarPerm extractEntry app/templates/gitignore
+95 silly gunzTarPerm extractEntry app/templates/jshintrc
+96 silly gunzTarPerm extractEntry app/templates/css/_styles.css
+97 silly lockFile 70badef7-or-phaser-official-0-0-2-package tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package
+98 silly lockFile 70badef7-or-phaser-official-0-0-2-package tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package
+99 silly lockFile c628b5e1-haser-official-0-0-2-package-tgz tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+100 silly lockFile c628b5e1-haser-official-0-0-2-package-tgz tar:///Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz
+101 verbose chmod /Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz 644
+102 verbose chown /Users/jdowell/.npm/generator-phaser-official/0.0.2/package.tgz [ 501, 20 ]
+103 silly lockFile 3a52ce78- .
+104 silly lockFile 3a52ce78- .
+105 silly publish { name: 'generator-phaser-official',
+105 silly publish   version: '0.0.2',
+105 silly publish   description: 'Yeoman Generator for the Phaser Game framework. Includes state and prefab generators',
+105 silly publish   license: 'MIT',
+105 silly publish   main: 'app/index.js',
+105 silly publish   repository:
+105 silly publish    { type: 'git',
+105 silly publish      url: 'git://github.com/codevinsky/generator-phaser-official' },
+105 silly publish   keywords:
+105 silly publish    [ 'HTML5',
+105 silly publish      'game',
+105 silly publish      'canvas',
+105 silly publish      '2d',
+105 silly publish      'WebGL',
+105 silly publish      'web audio',
+105 silly publish      'physics',
+105 silly publish      'tweens',
+105 silly publish      'javascript',
+105 silly publish      'typescript' ],
+105 silly publish   author:
+105 silly publish    { name: 'Jeremy Dowell',
+105 silly publish      email: 'jeremy@codevinsky.com',
+105 silly publish      url: 'https://github.com/codevinsky' },
+105 silly publish   engines: { node: '>=0.10.0' },
+105 silly publish   scripts: { test: 'mocha' },
+105 silly publish   files: [ 'app' ],
+105 silly publish   dependencies: { 'yeoman-generator': '~0.16.0', chalk: '~0.4.0' },
+105 silly publish   devDependencies:
+105 silly publish    { mocha: '*',
+105 silly publish      'grunt-html-build': '~0.3.2',
+105 silly publish      lodash: '~2.4.1',
+105 silly publish      underscore: '~1.6.0',
+105 silly publish      'underscore.string': '~2.3.3' },
+105 silly publish   peerDependencies: { yo: '>=1.0.0' },
+105 silly publish   readme: '# generator-phaser [![Build Status](https://secure.travis-ci.org/codevinsky/generator-phaser.png?branch=master)](https://travis-ci.org/codevinsky/generator-phaser)\n\n> [Yeoman](http://yeoman.io) generator\n\n\n## Getting Started\n\n### What is Yeoman?\n\nTrick question. It\'s not a thing. It\'s this guy:\n\n![](http://i.imgur.com/JHaAlBJ.png)\n\nBasically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.\n\nNot every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*\n\n```\n$ npm install -g yo\n```\n\n### Yeoman Generators\n\nYeoman travels light. He didn\'t pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.\n\nTo install generator-phaser from npm, run:\n\n```\n$ npm install -g generator-phaser-official\n```\n\nFinally, initiate the generator:\n\n```\n$ yo phaser-official\n```\n\n### Subgenerators\n\nThis generator also comes with two sub-generators:\n\n``` \n$ yo phaser-official:state "stateName"\n```\n\n```\n$ yo phaser-official:prefab "prefabName"\n```\n\n### Built in server\n\nOnce you\'ve run the generator, all you have to do is:\n\n```\n$ grunt\n```\n\nThis will start a server, build the index and bootstrapper files, and watch for any changes to javascript files in the game/ directory\n\n\n### Getting To Know Yeoman\n\nYeoman has a heart of gold. He\'s a person with feelings and opinions, but he\'s very easy to work with. If you think he\'s too opinionated, he can be easily convinced.\n\nIf you\'d like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).\n\n\n## License\n\nMIT\n',
+105 silly publish   readmeFilename: 'README.md',
+105 silly publish   bugs: { url: 'https://github.com/codevinsky/generator-phaser-official/issues' },
+105 silly publish   homepage: 'https://github.com/codevinsky/generator-phaser-official',
+105 silly publish   _id: 'generator-phaser-official@0.0.2',
+105 silly publish   dist: { shasum: '970e73c9e1173d5c7bb0aedd4d894a80b8421454' },
+105 silly publish   _from: '.' }
+106 verbose url raw generator-phaser-official
+107 verbose url resolving [ 'https://registry.npmjs.org/', './generator-phaser-official' ]
+108 verbose url resolved https://registry.npmjs.org/generator-phaser-official
+109 info trying registry request attempt 1 at 19:48:55
+110 http PUT https://registry.npmjs.org/generator-phaser-official
+111 http 403 https://registry.npmjs.org/generator-phaser-official
+112 info trying registry request attempt 1 at 19:48:57
+113 http PUT https://registry.npmjs.org/generator-phaser-official
+114 http 403 https://registry.npmjs.org/generator-phaser-official
+115 error publish Failed PUT 403
+116 error Error: forbidden cannot modify pre-existing version: 0.0.2
+116 error old={"name":"generator-phaser-official","version":"0.0.2","description":"Yeoman Generator for the Phaser Game framework. Includes state and prefab generators","license":"MIT","main":"app/index.js","repository":{"type":"git","url":"git://github.com/codevinsky/generator-phaser-official"},"keywords":["HTML5","game","canvas","2d","WebGL","web audio","physics","tweens","javascript","typescript"],"author":{"name":"Jeremy Dowell","email":"jeremy@codevinsky.com","url":"https://github.com/codevinsky"},"engines":{"node":">=0.10.0"},"scripts":{"test":"mocha"},"files":["app"],"dependencies":{"yeoman-generator":"~0.16.0","chalk":"~0.4.0"},"devDependencies":{"mocha":"*","grunt-html-build":"~0.3.2","lodash":"~2.4.1","underscore":"~1.6.0","underscore.string":"~2.3.3"},"peerDependencies":{"yo":">=1.0.0"},"bugs":{"url":"https://github.com/codevinsky/generator-phaser-official/issues"},"homepage":"https://github.com/codevinsky/generator-phaser-official","_id":"generator-phaser-official@0.0.2","dist":{"shasum":"2007f78c9856868d2b4ba26d1dad3a510e3763f9","tarball":"http://registry.npmjs.org/generator-phaser-official/-/generator-phaser-official-0.0.2.tgz"},"_from":".","_npmVersion":"1.3.21","_npmUser":{"name":"codevinsky","email":"jeremy@codevinsky.com"},"maintainers":[{"name":"codevinsky","email":"jeremy@codevinsky.com"}]}
+116 error new={"name":"generator-phaser-official","version":"0.0.2","description":"Yeoman Generator for the Phaser Game framework. Includes state and prefab generators","license":"MIT","main":"app/index.js","repository":{"type":"git","url":"git://github.com/codevinsky/generator-phaser-official"},"keywords":["HTML5","game","canvas","2d","WebGL","web audio","physics","tweens","javascript","typescript"],"author":{"name":"Jeremy Dowell","email":"jeremy@codevinsky.com","url":"https://github.com/codevinsky"},"engines":{"node":">=0.10.0"},"scripts":{"test":"mocha"},"files":["app"],"dependencies":{"yeoman-generator":"~0.16.0","chalk":"~0.4.0"},"devDependencies":{"mocha":"*","grunt-html-build":"~0.3.2","lodash":"~2.4.1","underscore":"~1.6.0","underscore.string":"~2.3.3"},"peerDependencies":{"yo":">=1.0.0"},"readme":"# generator-phaser [![Build Status](https://secure.travis-ci.org/codevinsky/generator-phaser.png?branch=master)](https://travis-ci.org/codevinsky/generator-phaser)\u000a\u000a> [Yeoman](http://yeoman.io) generator\u000a\u000a\u000a## Getting Started\u000a\u000a### What is Yeoman?\u000a\u000aTrick question. It's not a thing. It's this guy:\u000a\u000a![](http://i.imgur.com/JHaAlBJ.png)\u000a\u000aBasically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.\u000a\u000aNot every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*\u000a\u000a```\u000a$ npm install -g yo\u000a```\u000a\u000a### Yeoman Generators\u000a\u000aYeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.\u000a\u000aTo install generator-phaser from npm, run:\u000a\u000a```\u000a$ npm install -g generator-phaser-official\u000a```\u000a\u000aFinally, initiate the generator:\u000a\u000a```\u000a$ yo phaser-official\u000a```\u000a\u000a### Subgenerators\u000a\u000aThis generator also comes with two sub-generators:\u000a\u000a``` \u000a$ yo phaser-official:state \"stateName\"\u000a```\u000a\u000a```\u000a$ yo phaser-official:prefab \"prefabName\"\u000a```\u000a\u000a### Built in server\u000a\u000aOnce you've run the generator, all you have to do is:\u000a\u000a```\u000a$ grunt\u000a```\u000a\u000aThis will start a server, build the index and bootstrapper files, and watch for any changes to javascript files in the game/ directory\u000a\u000a\u000a### Getting To Know Yeoman\u000a\u000aYeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.\u000a\u000aIf you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).\u000a\u000a\u000a## License\u000a\u000aMIT\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/codevinsky/generator-phaser-official/issues"},"homepage":"https://github.com/codevinsky/generator-phaser-official","_id":"generator-phaser-official@0.0.2","dist":{"shasum":"970e73c9e1173d5c7bb0aedd4d894a80b8421454","tarball":"http://registry.npmjs.org/generator-phaser-official/-/generator-phaser-official-0.0.2.tgz"},"_from":".","_npmVersion":"1.3.21","_npmUser":{"name":"codevinsky","email":"jeremy@codevinsky.com"},"maintainers":[{"name":"codevinsky","email":"jeremy@codevinsky.com"}]}: generator-phaser-official
+116 error     at RegClient.<anonymous> (/usr/local/Cellar/node/0.10.24/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:275:14)
+116 error     at Request.self.callback (/usr/local/Cellar/node/0.10.24/lib/node_modules/npm/node_modules/request/request.js:123:22)
+116 error     at Request.EventEmitter.emit (events.js:98:17)
+116 error     at Request.<anonymous> (/usr/local/Cellar/node/0.10.24/lib/node_modules/npm/node_modules/request/request.js:893:14)
+116 error     at Request.EventEmitter.emit (events.js:117:20)
+116 error     at IncomingMessage.<anonymous> (/usr/local/Cellar/node/0.10.24/lib/node_modules/npm/node_modules/request/request.js:844:12)
+116 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+116 error     at _stream_readable.js:920:16
+116 error     at process._tickCallback (node.js:415:13)
+117 error If you need help, you may report this *entire* log,
+117 error including the npm and node versions, at:
+117 error     <http://github.com/isaacs/npm/issues>
+118 error System Darwin 13.1.0
+119 error command "/usr/local/Cellar/node/0.10.24/bin/node" "/usr/local/bin/npm" "publish"
+120 error cwd /Users/jdowell/libs/generator-phaser-official
+121 error node -v v0.10.24
+122 error npm -v 1.3.21
+123 verbose exit [ 1, true ]
