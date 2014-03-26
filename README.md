@@ -35,6 +35,29 @@ Finally, initiate the generator:
 $ yo phaser-official
 ```
 
+### Subgenerators
+
+This generator also comes with two sub-generators:
+
+``` 
+$ yo phaser-official:state "stateName"
+```
+
+```
+$ yo phaser-official:prefab "prefabName"
+```
+
+### Built in server
+
+Once you've run the generator, all you have to do is:
+
+```
+$ grunt
+```
+
+This will start a server, build the index and bootstrapper files, and watch for any changes to javascript files in the game/ directory
+
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
