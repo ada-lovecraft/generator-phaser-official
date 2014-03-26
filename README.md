@@ -1,4 +1,5 @@
-# generator-phaser [![Build Status](https://secure.travis-ci.org/codevinsky/generator-phaser.png?branch=master)](https://travis-ci.org/codevinsky/generator-phaser)
+# generator-phaser-official
+
 
 > [Yeoman](http://yeoman.io) generator
 

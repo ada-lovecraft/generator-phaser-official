@@ -56,7 +56,7 @@ module.exports = function (grunt) {
     },
     htmlbuild: {
       dist: {
-        src: 'templates/_index.tpl',
+        src: 'templates/_index.html.tpl',
         dest: 'index.html',
         options: {
           scripts: {
