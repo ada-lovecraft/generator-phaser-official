@@ -56,7 +56,7 @@ module.exports = function (grunt) {
     },
     htmlbuild: {
       dist: {
-        src: '_index.tpl',
+        src: 'templates/_index.tpl',
         dest: 'index.html',
         options: {
           scripts: {
@@ -89,6 +89,5 @@ module.exports = function (grunt) {
     var bootstrapper = grunt.file.read('templates/_main.js.tpl');
     bootstrapper = grunt.template.process(bootstrapper,{data: config});
     grunt.file.write('game/main.js', bootstrapper);
-  });
   });
 };
