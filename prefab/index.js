@@ -5,7 +5,7 @@ var chalk = require('chalk');
 
 
 
-var PrefabGenerator = yeoman.generators.Base.extend({
+var PrefabGenerator = yeoman.generators.NamedBase.extend({
 
   askFor: function () {
     var done = this.async();
@@ -27,7 +27,7 @@ var PrefabGenerator = yeoman.generators.Base.extend({
             return true;
           }
         },
-        default: 'prefab'
+        default: this.name
       },
       {
         name: 'prefabSpriteKey',
