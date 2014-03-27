@@ -1,20 +1,17 @@
 'use strict';
 var util = require('util');
 var yeoman = require('yeoman-generator');
-var chalk = require('chalk');
 
 
 
 var PrefabGenerator = yeoman.generators.NamedBase.extend({
-
+  init: function() {
+    console.log('Creating the new prefab:', this.name);
+  },
   askFor: function () {
     var done = this.async();
 
-    // have Yeoman greet the user
-    this.log(this.yeoman);
-
     // replace it with a short and sweet description of your generator
-    this.log(chalk.magenta('Let\'s create a prefab.'));
     var prefabNamePattern = new RegExp(/^\S+$/)
 
     var prompts = [{
@@ -32,7 +29,7 @@ var PrefabGenerator = yeoman.generators.NamedBase.extend({
       {
         name: 'prefabSpriteKey',
         message: 'What sprite key would you like to use?',
-        default: 'player'
+        default: this.name
       },
     ];
 
