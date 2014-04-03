@@ -33,7 +33,7 @@ var PhaserGenerator = yeoman.generators.Base.extend({
       {
         name: 'phaserVersion',
         message: 'Which Phaser version would you like to use?',
-        default: '2.0.1'
+        default: '2.0.2'
       },
       {
         name: 'gameWidth',
@@ -67,11 +67,11 @@ var PhaserGenerator = yeoman.generators.Base.extend({
     this.template('_bower.json', 'bower.json');
     this.template('_config.json','config.json');
     this.template('_package.json','package.json');
-    this.template('templates/_index.html.tpl');
+    this.template('_index.html', 'index.html');
 
 
     // game files
-    this.template('game/states/_boot.js','game/states/boot.js');
+    this.copy('game/states/boot.js');
     this.copy('game/states/preload.js');
     this.copy('game/states/menu.js');
     this.copy('game/states/play.js');
@@ -81,7 +81,7 @@ var PhaserGenerator = yeoman.generators.Base.extend({
     this.copy('templates/_main.js.tpl');
     
   },
-  createIndex: function() {
+  createBootstrapper: function() {
     var stateFiles = this.expand('game/states/*.js');
     this.gameStates = [];
     var statePattern = new RegExp(/(\w+).js$/);
