@@ -1,6 +1,4 @@
-// This is a file copied by your subgenerator
-(function() {
-  'use strict';
+'use strict';
   function <%= _.capitalize(name) %>() {}
   <%= _.capitalize(name) %>.prototype = {
     preload: function() {
@@ -25,5 +23,4 @@
       // (i.e. you switch to another state from this one).
     }
   };
-  <%= _.capitalize(name) %>State = <%= _.capitalize(name) %>;
-}());
+module.exports = <%= _.capitalize(name) %>;
