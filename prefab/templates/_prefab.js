@@ -15,3 +15,5 @@ var <%= _.capitalize(prefabName) %> = function(game, x, y, frame) {
   // write your prefab's specific update code here
   
 };
+
+module.exports = <%= _.capitalize(prefabName) %>;
