@@ -15,7 +15,8 @@
     "physics",
     "tweens",
     "javascript",
-    "typescript"
+    "typescript",
+    "yeoman-generator"
   ],
   "author": {
     "name": "Jeremy Dowell",
