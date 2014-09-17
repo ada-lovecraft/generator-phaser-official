@@ -57,7 +57,21 @@ var PrefabGenerator = yeoman.generators.NamedBase.extend({
 
 
   files: function () {
-    this.template('_prefab.js', 'game/prefabs/' + this.prefabName + '.js');
+    var templateFile;
+    switch(this.prefabType) {
+      case "s":
+        templateFile = '_prefabSprite.js';
+        break;
+      case "t":
+        templateFile = '_prefabTileSprite.js';
+        break;
+      case "g":
+        templateFile = '_prefabGroup.js';
+        break;
+      default:
+        break;
+    }
+    this.template(templateFile, 'game/prefabs/' + this.prefabName + '.js');
   }
 });
 
