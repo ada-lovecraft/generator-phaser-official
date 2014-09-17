@@ -3,7 +3,6 @@ var util = require('util');
 var yeoman = require('yeoman-generator');
 
 
-
 var PrefabGenerator = yeoman.generators.NamedBase.extend({
   init: function() {
     this.log('Creating the new prefab:', this.name);
@@ -16,19 +15,20 @@ var PrefabGenerator = yeoman.generators.NamedBase.extend({
     var prefabTypes = "stg";
 
     var prompts = [
-        {
-          name: 'prefabType',
-          message: 'What is the type of your prefab ([s]prite, [t]ileSprite or [g]roup)?',
-          validate: function (input) {
+      {
+        name: 'prefabType',
+        message: 'What is the type of your prefab ([s]prite, [t]ileSprite or [g]roup)?',
+        validate: function (input) {
             if (input && input.length === 1 && prefabTypes.indexOf(input) > -1) {
               return true;
             } else {
               return 'The type can be only s, t or g.';
             }
-          },
-          default: 's';
+          }
+        default: "s";
         },
         {
+          
         name: 'prefabName',
         message: 'What is the name of your prefab?',
         validate: function(input) {
