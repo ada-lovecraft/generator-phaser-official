@@ -24,8 +24,8 @@ var PrefabGenerator = yeoman.generators.NamedBase.extend({
             } else {
               return 'The type can be only s, t or g.';
             }
-          }
-        default: "s";
+          },
+        default: 's'
         },
         {
           
