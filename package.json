@@ -1,5 +1,5 @@
 {
-  "name": "generator-phaser-official-dani",
+  "name": "generator-phaser-official",
   "version": "0.0.10",
   "description": "Yeoman Generator for the Phaser Game framework. Includes state and prefab generators",
   "license": "MIT",
