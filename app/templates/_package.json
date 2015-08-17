@@ -4,7 +4,6 @@
   "devDependencies": {
     "bower": "^1.3.12",
     "browserify": "^6.2.0",
-    "connect-livereload": "^0.5.0",
     "grunt": "^0.4.5",
     "grunt-browserify": "^3.1.0",
     "grunt-contrib-connect": "^0.8.0",
