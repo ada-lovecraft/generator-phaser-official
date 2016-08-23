@@ -30,7 +30,7 @@ To install generator-phaser from npm, run:
 $ npm install -g generator-phaser-official
 ```
 
-Finally, initiate the generator:
+Create your folder where you want your game to be located and finally, initiate the generator inside that folder:
 
 ```
 $ yo phaser-official
